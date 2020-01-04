@@ -14,14 +14,14 @@ class OrganisationsTableSeeder extends Seeder
     {
         {
             $o = new Organisation();
-            $o->title = "Brno";
-            $o->info = 'Střední škola informatiky, poštovnictví a finančnictví Brno';
+            $o->title = "htlkrems";
+            $o->info = 'HTL Krems - Abteilung für Informationstechnologie';
             $o->inactive = false;
             $o->save();
 
             $o = new Organisation();
-            $o->title = "htlkrems";
-            $o->info = 'HTL Krems - Abteilung für Informationstechnologie';
+            $o->title = "Brno";
+            $o->info = 'Střední škola informatiky, poštovnictví a finančnictví Brno';
             $o->inactive = false;
             $o->save();
 
