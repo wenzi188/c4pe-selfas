@@ -85,7 +85,7 @@ class FormController extends Controller
             $validation_error = true;
         else {
             $tokenCreated = $token->created_at;
-// tbd            $token->delete();
+            $token->delete();
         }
         return array($validation_error, $tokenCreated);
     }

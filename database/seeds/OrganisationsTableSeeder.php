@@ -20,7 +20,7 @@ class OrganisationsTableSeeder extends Seeder
             $o->save();
 
             $o = new Organisation();
-            $o->title = "Brno";
+            $o->title = "brno";
             $o->info = 'Střední škola informatiky, poštovnictví a finančnictví Brno';
             $o->inactive = false;
             $o->save();
