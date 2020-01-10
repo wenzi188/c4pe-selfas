@@ -312,7 +312,7 @@ class QuestionnaireController extends Controller
         foreach($rows as $row) {
             $id = $row->id;
             $title = (strlen($row->title) > 64 ? substr($row->title, 0, 64): $row->title);
-            $info = (strlen($row->info) > 128 ? substr($row->info, 0, 128): $row->info);
+            $info = (strlen($row->info) > 512 ? substr($row->info, 0, 512): $row->info);
             if(strlen($title) == 0)   // do not save, if title is empty - additional check, should not happen due to browser
                 continue;
             $weight_0 = intval($row->weights[0]->weight);

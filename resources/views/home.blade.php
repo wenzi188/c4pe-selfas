@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         @foreach($organisations as $orga)
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-header"><h4>{{$orga->info}}</h4></div>
 

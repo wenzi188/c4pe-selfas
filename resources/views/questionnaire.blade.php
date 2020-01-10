@@ -91,10 +91,10 @@
         <div class="card col-md-11">
             <div class="card-body" style="padding-bottom:0.25px">
                 <div class="form-inline">
-                    <div class="form-group col-md-6" style="padding-left:0px">
-                        <input type="text" maxlength="64" class="form-control" value="" id="title" placeholder="{{__('c4pe.quest.edit.placeholder.newCriteria')}}" name="">
+                    <div class="form-group col-md-5" style="padding-left:0px">
+                        <input style="width:inherit" type="text" maxlength="64" class="form-control" value="" id="title" placeholder="{{__('c4pe.quest.edit.placeholder.newCriteria')}}" name="">
                     </div>
-                    <div class="col-md-2" style="margin-left:-1rem;">
+                    <div class="offset-md-1 col-md-2">
                         <select onfocus="rememberValue(this)" class="form-control" id="weight1" onchange="return checkAllowed(this);">
                             @foreach(config('app.allowedWeights') as $weight)
                                 <option value="{{$weight}}">{{$weight}}</option>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="form-group col-md-5" maxlength="128" style="padding-left:2rem; padding-top:0.8rem;">
+                    <div class="form-group col-md-6" maxlength="512" style="padding-left:0px;padding-top:0.8rem;">
                         <textarea class="form-control form-control-sm" rows="3" id="info" placeholder="{{__('c4pe.quest.edit.placeholder.criteria.additionalInfo')}}"></textarea>
                     </div>
                 </div>

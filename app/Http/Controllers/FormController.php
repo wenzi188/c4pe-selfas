@@ -73,6 +73,8 @@ class FormController extends Controller
         $token->token = (strlen($token) > 32) ? substr($t, 0, 32): $t;
         $token->save();
 
+        if($request->has('viewSize') && $request->viewSize == 'xs')
+            return view('formSmall', ['questionnaire' => $questionnaire, 'pairs' => $collection, 'token' => $token->token, 'periodId' => $periodId]);
         return view('form', ['questionnaire' => $questionnaire, 'pairs' => $collection, 'token' => $token->token, 'periodId' => $periodId]);
     }
 

@@ -33,6 +33,14 @@
 
         </head>
 <body >
+<div id="sizer">
+    <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none" data-size="xs"></div>
+    <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none" data-size="sm"></div>
+    <div class="d-none d-sm-none d-md-block d-lg-none d-xl-none" data-size="md"></div>
+    <div class="d-none d-sm-none d-md-none d-lg-block d-xl-none" data-size="lg"></div>
+    <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block" data-size="xl"></div>
+</div>
+
 <div id="app">
     <div class="container">
         <div class="row">
@@ -51,8 +59,8 @@
                         <img src="{{asset("images/InterregLogo.png")}}" class="img-fluid">
                     </a>
                 </div>
-                <div class="col-md-7 align-middle" style="text-align:center;padding-top:10px">
-                    <span style="font-size:36px">{!! __('c4pe.form.navi.title')!!}</span>
+                <div class="col-md-9 align-middle" style="text-align:center;padding-top:10px">
+                    <span id="headline" style="font-size:36px">{!! __('c4pe.form.navi.title')!!}</span>
                 </div>
             </div>
         </div>
@@ -62,5 +70,19 @@
         @yield('content')
     </main>
 </div>
+
+<script>
+    function viewSize() {
+        return $('#sizer').find('div:visible').data('size');
+    }
+
+    $( document ).ready(function() {
+        if(viewSize() == "xs")
+            $('#headline').text("");
+        if(viewSize() == "md")
+            $('#headline').text("Self-Assessment-Center");
+    });
+</script>
+
 </body>
 </html>

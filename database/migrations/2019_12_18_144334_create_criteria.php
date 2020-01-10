@@ -18,7 +18,7 @@ class CreateCriteria extends Migration
             $table->bigInteger("questionnaire_id")->index();
             $table->integer("sequence");
             $table->string("title", 64);
-            $table->string("info", 128);
+            $table->string("info", 512);
             $table->softDeletes();
             $table->timestamps();
         });

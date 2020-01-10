@@ -12,7 +12,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        /*$manager = new User();
+        $manager = new User();
         $manager->name = "Hugo Boss";
         $manager->firstname = 'Hugo';
         $manager->lastname = 'Boss';
@@ -30,7 +30,7 @@ class UsersTableSeeder extends Seeder
         $manager->password = bcrypt('123456');
         $manager->role = 0;
         $manager->organisation_id = 2;
-        $manager->save();*/
+        $manager->save();
 
         $manager = new User();
         $manager->name = "Superadministrator";
