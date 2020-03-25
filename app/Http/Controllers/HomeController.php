@@ -9,6 +9,8 @@ use App\User;
 use App\Questionnaire;
 use App\Period;
 use Lang;
+use Carbon\Carbon;
+
 
 class HomeController extends Controller
 {
@@ -60,6 +62,26 @@ class HomeController extends Controller
     }
     public function impressum(Request $request) {
         return view('impressum', []);
+    }
+
+
+    public function acceptDSGVO(Request $request, User $user)
+    {
+        return view('acceptDSGVO', ['user' => $user]);
+    }
+
+    public function acceptedDSGVO(Request $request)
+    {
+        $user = User::where('id',$request->solspec)
+                    ->where('acceptedDSGVO', null)
+                    ->get()
+                    ->first();
+        if($user) {
+            $user->acceptedDSGVO = Carbon::now();
+            $user->save();
+        }
+
+        return redirect(route("login"));
     }
 
 }

@@ -40,14 +40,14 @@
             </div>
             <div class="row p-2 justify-content-center" >
                 @if($loop->index != 0)
-                    <button class="btn btn-secondary btn-xs" style="margin-top:6px" onclick="return back({{$loop->index}})">Zurück</button>
+                    <button class="btn btn-secondary btn-xs" style="margin-top:6px" onclick="return back({{$loop->index}})">{{__('c4pe.formSmall.backButton')}}</button>
                 @endif
                 <span style="padding:10px">Frage {{$loop->index+1}} von {{$loop->count}}</span>
                 @if($loop->index == $loop->count-1)
-                        <button class="btn btn-primary btn-xs" type="submit">Absenden</button>
+                        <button class="btn btn-primary btn-xs" type="submit">{{__('c4pe.formSmall.sendButton')}}</button>
                 @endif
                 @if($loop->index != $loop->count-1)
-                        <a href="{{route('home')}}" class="btn btn-secondary btn-xs align-middle" style="margin-top:6px" >Abbruch</a>
+                        <a href="{{route('home')}}" class="btn btn-secondary btn-xs align-middle" style="margin-top:6px" >{{__('c4pe.formSmall.cancelButton')}}</a>
                 @endif
             </div>
             </div>

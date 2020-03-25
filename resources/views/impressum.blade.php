@@ -11,7 +11,7 @@
     <div class="row justify-content-center">
 
     @guest
-        <a href="{{route('home')}}" class="btn btn-sm btn-primary">Zurück</a>
+        <a href="{{route('home')}}" class="btn btn-sm btn-primary">{{__('c4pe.impress.backButton')}}</a>
     @endguest
     @auth
         <a href="{{route('questionnaire.list')}}" class="btn btn-sm btn-primary">{{__('c4pe.impress.backButton')}}</a>

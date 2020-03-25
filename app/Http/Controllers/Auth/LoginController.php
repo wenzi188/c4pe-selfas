@@ -7,6 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\App;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -47,8 +48,12 @@ class LoginController extends Controller
     protected function authenticated($request, $user)
     {
         $user->last_login = Carbon::now();
-        App::setLocale('cs');
+        //App::setLocale('cs');
         $user->save();
+        if($user->acceptedDSGVO == null) {
+            Auth::logout();
+            return view('acceptDSGVO', ['user' => $user]);
+        }
     }
 
 }

@@ -23,7 +23,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/formList/{id}', 'HomeController@formList')->name('home.formList');
 Route::get('/form/{oid}/{qid}/{pid}', 'FormController@index')->name('form.index');
 Route::post('/form/{qid}/{pid}/store', 'FormController@store')->name('form.store');
-
+Route::get('/acceptDSGVO', 'HomeController@acceptDSGVO')->name('home.acceptDSGVO');
+Route::post('/acceptedDSGVO', 'HomeController@acceptedDSGVO')->name('home.acceptedDSGVO');
 
 Route::get('/questionnaireList', 'QuestionnaireController@index')->name("questionnaire.list");
 Route::get('/admin', 'QuestionnaireController@index')->name("questionnaire.list");

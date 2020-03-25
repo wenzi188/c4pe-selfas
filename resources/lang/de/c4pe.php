@@ -19,6 +19,9 @@ return [
     'form.result.tendency' => 'Tendenz',
     'form.result.newButton' => 'Neuer Fragebogen',
     'form.result.finishButton' => 'Beenden',
+    'formSmall.cancelButton' => 'Abbrechen',
+    'formSmall.sendButton' => 'Absenden',
+    'formSmall.backButton' => 'Zurück',
 
 
     // backend tags
@@ -130,8 +133,6 @@ return [
     'statistics.table.begin' => 'Beginn',
     'statistics.table.end' => 'Ende',
 
-    'impress.backButton' => 'Zurück',
-
     'userList.ListofUsers' => 'Liste der Benutzer',
     'userList.newUser' => '+ neuer Benutzer',
     'userList.table.lastname' => 'Nachname',
@@ -163,8 +164,13 @@ return [
     'user.pwdChange.title' => 'Passwort ändern',
     'user.pwdCloseButton' => 'Schliessen',
     'user.pwdSaveButton' => 'Speichern',
+    'impress.backButton' => 'Zurück',
 
-
+    // neue Tags für DSGVO
+    'user.dsgvo.title' => 'Sehr geehrter Benutzer, sehr geehrte Benutzerin!',
+    'user.dsgvo.explanation' => 'Um den vollen Funktionsumfang der Applikation benutzen zu können, müssen Sie bitte beim ersten Login den untenstehenden Datenschutzrichtlinien zustimmen und sich erneut einloggen!',
+    'user.dsgvo.checkbox' => 'Datenschutzrichtlinien akzeptieren',
+    'user.dsgvo.button' => 'Weiter zum Login',
 
 ];
 
