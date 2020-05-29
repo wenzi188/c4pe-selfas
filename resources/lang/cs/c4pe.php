@@ -165,9 +165,10 @@ return [
     'impress.backButton' => 'Zpět',
 
     // neue Tags für DSGVO
-    'user.dsgvo.title' => 'Dear User',
-    'user.dsgvo.explanation' => 'In order to use the full functionality of this application, you have to accept the data privacy policy (see below)',
-    'user.dsgvo.checkbox' => 'Accept',
-    'user.dsgvo.button' => 'Continue',
+    'user.dsgvo.title' => 'Vážený uživateli, vážená uživatelko!',
+    'user.dsgvo.explanation' => 'Jestliže chcete používat funkce aplikace v plném rozsahu, musíte při prvním přihlášení souhlasit s níže uvedenou směrnicí o ochraně osobních údajů a poté se znovu přihlásit!',
+    'user.dsgvo.checkbox' => 'Akceptuji směrnici o ochraně osobních údajů',
+    'user.dsgvo.button' => 'Dále k přihlášení',
+    'user.dsgvo.explanationLong' => 'Odesláním své registrace souhlasím se zpracováním svých osobních údajů, tj. jména, e-mailové adresy, hesla a zaměstnavatele. Následně budu moci vytvářet vlastní formuláře. Informace podle čl. 13 GDPR naleznu v prohlášení k ochraně osobních údajů [odkaz]. Svůj souhlas mohu kdykoliv odvolat e-mailem na gregor.pirker@donau.uni.ac.at'
 
 ];

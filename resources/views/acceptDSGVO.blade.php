@@ -8,7 +8,7 @@
             <div>{{__('c4pe.user.dsgvo.explanation')}}</div>
         </div>
     </div>
-    <div class="row justify-content-center col-md-8" style="margin-top:20px">
+    <div class="row justify-content-center col-md-8 offset-md-2" style="margin-top:20px">
         <form method="POST" action="{{ route('home.acceptedDSGVO') }}">
             <input type="hidden" name="solspec" value="{{$user->id}}">
                 @csrf
@@ -23,9 +23,12 @@
                     </div>
                 </div>
             </div>
+            <div class="form-group  row">
+                <div class="col-md-10 offset-md-1">{{__('c4pe.user.dsgvo.explanationLong')}}</div>
+            </div>
 
             <div class="form-group row mb-0">
-                <div class="col-md-10 offset-md-2">
+                <div class="col-md-10 offset-md-3">
                     <button id="acceptButton" disabled type="submit" class="btn btn-primary">
                         {{__('c4pe.user.dsgvo.button')}}
                     </button>

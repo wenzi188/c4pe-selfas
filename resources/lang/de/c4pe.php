@@ -171,6 +171,7 @@ return [
     'user.dsgvo.explanation' => 'Um den vollen Funktionsumfang der Applikation benutzen zu können, müssen Sie bitte beim ersten Login den untenstehenden Datenschutzrichtlinien zustimmen und sich erneut einloggen!',
     'user.dsgvo.checkbox' => 'Datenschutzrichtlinien akzeptieren',
     'user.dsgvo.button' => 'Weiter zum Login',
+    'user.dsgvo.explanationLong' => 'Durch das Abschicken meiner Registrierung stimme ich der Verarbeitung meiner personenbezogenen Daten Name, E-Mail-Adresse, Passwort und ArbeitgeberIn zu, um in Folge eigenständig Fragebögen zu gestalten. Informationen gem. Art 13 DSGVO finde ich in der Datenschutzerklärung. Meine Einwilligung kann ich jederzeit durch E-Mail an gregor.pirker@donau-uni.ac.at widerrufen.'
 
 ];
 
